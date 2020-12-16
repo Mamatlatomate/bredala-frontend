@@ -3,7 +3,9 @@ import Router from 'vue-router'
 import qs from 'qs'
 
 import Home from '~/pages/index'
+import Recipes from '~/pages/recipes'
 import Recipe from '~/pages/recipes/_slug'
+import About from '~/pages/about'
 
 Vue.use(Router)
 
@@ -15,9 +17,19 @@ export function createRouter(ssrContext, createDefaultRouter, routerOptions) {
       component: Home,
     },
     {
+      name: 'recipes',
+      path: '/recettes',
+      component: Recipes,
+    },
+    {
       name: 'recipe',
       path: '/recette/:slug',
       component: Recipe,
+    },
+    {
+      name: 'about',
+      path: '/qui-suis-je',
+      component: About,
     },
   ]
 

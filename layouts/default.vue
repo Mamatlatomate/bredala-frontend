@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="text-black font-raleway">
+    <Header />
     <Nuxt />
   </div>
 </template>

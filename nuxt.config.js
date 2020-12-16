@@ -25,8 +25,24 @@ export default {
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/svg',
+    '@nuxtjs/google-fonts',
     ['@nuxtjs/router', { keepDefaultRouter: true }],
   ],
+
+  googleFonts: {
+    display: 'swap',
+    families: {
+      Roboto: true,
+      Raleway: {
+        wght: [100, 400, 600, 700],
+        ital: [100],
+      },
+      'Dancing+Script': {
+        wght: [400, 700],
+      },
+    },
+  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: ['@nuxtjs/axios', '@nuxtjs/router'],
