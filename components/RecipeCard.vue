@@ -1,6 +1,6 @@
 <template>
   <nuxt-link :to="{ name: 'recipe', params: { slug: recipe.slug } }">
-    <img v-if="recipe.images.length" :src="recipe.images.thumbnail" class="w-full h-64 object-cover" />
+    <img v-if="recipe.images" :src="recipe.images.thumbnail" class="w-full h-64 object-cover" />
     <div class="py-3 px-2">
       <div class="flex">
         <div class="flex items-center mr-3">
