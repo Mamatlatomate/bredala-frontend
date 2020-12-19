@@ -3,7 +3,7 @@ require('dotenv').config()
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'bredala-frontend',
+    title: 'Les Bredlas de Mamema',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -36,7 +36,7 @@ export default {
       Roboto: true,
       Raleway: {
         wght: [100, 400, 600, 700],
-        ital: [100],
+        ital: [100, 400],
       },
       'Dancing+Script': {
         wght: [400, 700],

@@ -1,7 +1,9 @@
 <template>
-  <div class="text-black font-raleway">
+  <div class="text-black bg-white font-raleway">
     <Header />
-    <Nuxt />
+    <div class="container">
+      <Nuxt class="mb-10" />
+    </div>
   </div>
 </template>
 

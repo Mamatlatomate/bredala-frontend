@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="mx-auto">
     <div class="grid gap-y-16 gap-x-10 grid-cols-3">
       <RecipeCard
         v-for="(recipe, key) in recipes"

@@ -12,9 +12,12 @@ module.exports = {
       center: true,
     },
     colors: {
-      orange: '#D06C16',
-      grey: '#DFE0DF',
-      white: '#ffffff',
+      orange: '#d06c16',
+      grey: '#dfe0df',
+      white: {
+        standard: '#ffffff',
+        DEFAULT: '#fefefe',
+      },
       black: '#1c1c1c',
     },
     fontFamily: {

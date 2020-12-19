@@ -5,6 +5,7 @@ import qs from 'qs'
 import Home from '~/pages/index'
 import Recipes from '~/pages/recipes'
 import Recipe from '~/pages/recipes/_slug'
+import Category from '~/pages/categories/_slug'
 import About from '~/pages/about'
 
 Vue.use(Router)
@@ -25,6 +26,11 @@ export function createRouter(ssrContext, createDefaultRouter, routerOptions) {
       name: 'recipe',
       path: '/recette/:slug',
       component: Recipe,
+    },
+    {
+      name: 'category',
+      path: '/categorie/:slug',
+      component: Category,
     },
     {
       name: 'about',

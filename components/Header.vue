@@ -1,12 +1,10 @@
 <template>
   <div class="mb-10">
     <nuxt-link :to="{ name: 'home' }">
-      <h1 class="text-orange font-dancing text-6xl font-bold text-center">
-        Les Bredlas de Mamema
-      </h1>
+      <img src="~/assets/logo.png" class="logo mx-auto max-w-lg" />
     </nuxt-link>
 
-    <div class="text-center">
+    <div class="text-center my-12">
       <nuxt-link
         v-for="(menu, key) in menuLinks"
         :key="key"

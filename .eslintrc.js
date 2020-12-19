@@ -16,5 +16,15 @@ module.exports = {
   ],
   plugins: ['prettier'],
   // add your custom rules here
-  rules: {},
+  rules: {
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'vue/attributes-order': 'off',
+    'vue/order-in-components': 'off',
+    'vue/no-v-html': 'off',
+    'prefer-const': 'off',
+    camelcase: 'off',
+    'vue/no-mutating-props': 'off',
+    'vue/custom-event-name-casing': 'off',
+  },
 }
