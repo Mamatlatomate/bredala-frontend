@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <div class="flex items-center">
       <img
         :src="recipe.images.classic"
@@ -51,13 +51,15 @@ export default {
   async asyncData({ app, params }) {
     const recipe = await app.$axios.$get(`recipe/${params.slug}`)
 
+    app.$axios.$post(`recipe/count-view/${params.slug}`)
+
     return {
       recipe: recipe.data,
     }
   },
   head() {
     return {
-      title: this.recipe.title + '| Les Bredlas de Mamema',
+      title: this.recipe.title + ' | Les Bredlas de Mamema',
     }
   },
 }

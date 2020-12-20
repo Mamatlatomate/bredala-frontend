@@ -8,7 +8,7 @@
       <nuxt-link
         v-for="(menu, key) in menuLinks"
         :key="key"
-        class="mx-4 font-semibold"
+        class="mx-4 font-semibold text-lg"
         :to="{ name: menu.route }"
       >
         {{ menu.label }}
