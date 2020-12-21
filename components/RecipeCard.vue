@@ -14,7 +14,7 @@
       class="w-full h-64 object-cover"
     />
 
-    <div class="bg-white-standard p-4">
+    <div class="bg-white p-4">
       <div class="flex">
         <div class="flex items-center mr-3">
           <IconClock class="w-4 h-4 mr-2"></IconClock>

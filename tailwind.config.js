@@ -14,10 +14,8 @@ module.exports = {
     colors: {
       orange: '#d06c16',
       grey: '#dfe0df',
-      white: {
-        standard: '#ffffff',
-        DEFAULT: '#fefefe',
-      },
+      light: '#f5f5f5',
+      white: '#ffffff',
       black: '#1c1c1c',
     },
     fontFamily: {

@@ -1,5 +1,5 @@
 <template>
-  <div class="text-black bg-white font-raleway">
+  <div class="text-black font-raleway">
     <Header />
     <div>
       <Nuxt class="mb-10" />
@@ -18,6 +18,11 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+html,
+body {
+  @apply bg-light;
 }
 
 *,
