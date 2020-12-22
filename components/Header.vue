@@ -1,19 +1,22 @@
 <template>
   <div class="mb-10">
     <nuxt-link :to="{ name: 'home' }">
-      <img src="~/assets/logo.png" class="logo mx-auto max-w-lg" />
+      <img
+        src="~/assets/logo.png"
+        class="logo mx-auto max-w-full md:max-w-lg"
+      />
     </nuxt-link>
 
     <div class="text-center my-12">
       <nuxt-link
         v-for="(menu, key) in menuLinks"
         :key="key"
-        class="mx-4 font-semibold text-lg"
+        class="mx-1 md:mx-4 font-semibold text-lg"
         :to="{ name: menu.route }"
       >
         {{ menu.label }}
       </nuxt-link>
-      <a href="mailto:besson.cris@wanadoo.fr" class="mx-4 font-semibold"
+      <a href="mailto:besson.cris@wanadoo.fr" class="mx-1 md:mx-4 font-semibold"
         >Contact</a
       >
     </div>

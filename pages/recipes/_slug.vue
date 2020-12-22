@@ -23,11 +23,14 @@
       <div class="col-span-1">
         <div class="mb-5">
           <h3>Ingrédients</h3>
-          <ul>
-            <li v-for="(ingredient, key) in recipe.ingredients" :key="key">
-              {{ ingredient.name }} - {{ ingredient.quantity }}
-            </li>
-          </ul>
+          <p
+            v-for="(ingredient, key) in recipe.ingredients"
+            :key="key"
+            class="mb-2"
+          >
+            <span class="block">{{ ingredient.name }}</span>
+            <span class="font-bold">{{ ingredient.quantity }}</span>
+          </p>
         </div>
 
         <div v-if="recipe.utensils">
