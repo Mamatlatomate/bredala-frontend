@@ -1,6 +1,6 @@
 <template>
   <div class="container bg-white shadow-md py-10">
-    <div class="text-center mb-10">
+    <div class="text-center mb-10 px-3">
       <h1 class="font-dancing font-bold text-5xl">{{ recipe.title }}</h1>
       <div>
         <nuxt-link
@@ -19,8 +19,10 @@
       style="height: 20rem"
     />
 
-    <div class="grid grid-cols-5 divide-x divide-orange mt-10 px-10">
-      <div class="col-span-1">
+    <div
+      class="grid grid-cols-5 lg:divide-x lg:divide-orange mt-10 px-5 lg:px-10"
+    >
+      <div class="col-span-5 md:col-span-1 mb-10 md:mb-0">
         <div class="mb-5">
           <h3>Ingrédients</h3>
           <p
@@ -43,7 +45,7 @@
         </div>
       </div>
 
-      <div class="col-span-4 pl-16">
+      <div class="col-span-5 md:col-span-4 md:pl-16">
         <h3>Recette</h3>
         <div class="body" v-html="recipe.body"></div>
       </div>

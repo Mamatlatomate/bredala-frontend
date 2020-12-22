@@ -1,5 +1,5 @@
 <template>
-  <div class="container text-center">
+  <div class="container text-center px-3 lg:px-0">
     <img
       src="~/assets/mamema.jpg"
       class="mx-auto rounded-full w-64 h-64 object-cover mb-10"
