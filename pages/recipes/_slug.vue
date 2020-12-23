@@ -41,9 +41,9 @@
     </div>
 
     <div
-      class="grid grid-cols-5 lg:divide-x lg:divide-orange mt-10 px-5 lg:px-10"
+      class="grid grid-cols-4 lg:divide-x lg:divide-orange mt-10 px-5 lg:px-10"
     >
-      <div class="col-span-5 md:col-span-1 mb-10 md:mb-0">
+      <div class="col-span-5 md:col-span-1 mb-10 md:mb-0 md:pr-5">
         <div class="mb-5">
           <h3>Ingrédients</h3>
           <p
@@ -66,17 +66,31 @@
         </div>
       </div>
 
-      <div class="col-span-5 md:col-span-4 md:pl-16">
+      <div class="col-span-5 md:col-span-3 md:pl-16">
         <h3>Recette</h3>
         <div class="body" v-html="recipe.body"></div>
+      </div>
+    </div>
+
+    <div
+      v-if="recipe.advice"
+      class="bg-orange mt-10 py-8 px-24 grid grid-cols-1 lg:grid-cols-4 items-center text-center lg:text-left"
+    >
+      <IconMamema class="col-span-1 mx-auto lg:mx-0" />
+      <div class="text-white col-span-3">
+        <h3>Les conseils de Mamema</h3>
+        <p>{{ recipe.advice }}</p>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import IconMamema from '~/assets/icons/mamema.svg?inline'
+
 export default {
   name: 'Recipe',
+  components: { IconMamema },
   async asyncData({ app, params, query }) {
     const recipe = await app.$axios.$get(`recipe/${params.slug}`)
 
@@ -98,7 +112,7 @@ export default {
 
 <style lang="postcss">
 h3 {
-  @apply font-bold text-3xl mb-3 !important;
+  @apply font-bold text-3xl mb-4 !important;
 }
 
 .info p {
