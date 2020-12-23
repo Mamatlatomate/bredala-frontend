@@ -83,4 +83,32 @@ h3 {
 .body img {
   @apply my-4;
 }
+
+.body ol,
+.body ul {
+  list-style: none;
+  counter-reset: item;
+  margin: 15px 0 15px 0;
+}
+.body ol li,
+.body ul li {
+  counter-increment: item;
+  margin-left: 20px;
+}
+.body ol li:before {
+  margin: 5px 10px 5px 0;
+  content: counter(item);
+  border-radius: 100%;
+  border: 1px solid #d06c16;
+  color: #d06c16;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body ul {
+  list-style: disc;
+}
 </style>
