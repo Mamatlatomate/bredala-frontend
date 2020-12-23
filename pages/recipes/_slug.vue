@@ -15,9 +15,30 @@
     </div>
     <img
       :src="recipe.images.classic"
-      class="w-full object-cover my-10"
+      class="w-full object-cover"
       style="height: 20rem"
     />
+
+    <div
+      class="bg-light grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center gap-y-3 lg:gap-y-0 px-5 py-8"
+    >
+      <div class="info">
+        <p>Temps de réalisation</p>
+        <span>{{ recipe.duration }}</span>
+      </div>
+      <div class="info">
+        <p>Quantité</p>
+        <span>{{ recipe.quantity }}</span>
+      </div>
+      <div class="info">
+        <p>Difficulté</p>
+        <span>{{ recipe.difficulty }}</span>
+      </div>
+      <div class="info">
+        <p>Coût de revient</p>
+        <span>{{ recipe.price }}</span>
+      </div>
+    </div>
 
     <div
       class="grid grid-cols-5 lg:divide-x lg:divide-orange mt-10 px-5 lg:px-10"
@@ -78,6 +99,13 @@ export default {
 <style lang="postcss">
 h3 {
   @apply font-bold text-3xl mb-3 !important;
+}
+
+.info p {
+  @apply font-bold text-lg;
+}
+.info span {
+  @apply text-orange;
 }
 
 .body img {
