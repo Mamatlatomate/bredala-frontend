@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <img class="banner w-full object-cover" src="~/assets/header.jpg" />
+      <img class="banner w-full object-cover" src="~/assets/banner.JPG" />
     </div>
     <div class="container px-4 lg:px-0 :mx-auto mt-20">
       <h2 class="font-dancing font-bold text-5xl mb-5">

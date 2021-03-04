@@ -57,7 +57,7 @@
         </div>
 
         <div v-if="recipe.utensils">
-          <h3>Ustensils</h3>
+          <h3>Ustensiles</h3>
           <ul>
             <li v-for="(utensil, key) in recipe.utensils" :key="key">
               {{ utensil.name }}
