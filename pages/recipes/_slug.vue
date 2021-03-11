@@ -56,11 +56,20 @@
           </p>
         </div>
 
-        <div v-if="recipe.utensils">
+        <div v-if="recipe.utensils.data.length">
           <h3>Ustensiles</h3>
           <ul>
-            <li v-for="(utensil, key) in recipe.utensils" :key="key">
-              {{ utensil.name }}
+            <li
+              v-for="(utensil, key) in recipe.utensils.data"
+              :key="key"
+              class="flex justify-between items-center"
+            >
+              <nuxt-link
+                :to="{ name: 'utensil', params: { slug: utensil.slug } }"
+                class="font-semibold hover:text-orange"
+              >
+                {{ utensil.name }}
+              </nuxt-link>
             </li>
           </ul>
         </div>
