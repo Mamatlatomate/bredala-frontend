@@ -30,7 +30,7 @@ export default {
     return {
       menuLinks: [
         {
-          label: 'Home',
+          label: 'Accueil',
           route: 'home',
         },
         {
