@@ -14,7 +14,7 @@
       </div>
     </div>
     <img
-      :src="recipe.images.classic"
+      :src="recipe.banner"
       class="w-full object-cover"
       style="height: 20rem"
     />

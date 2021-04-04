@@ -4,8 +4,8 @@
     class="shadow-md"
   >
     <img
-      v-if="recipe.images"
-      :src="recipe.images.thumbnail"
+      v-if="recipe.thumbnail"
+      :src="recipe.thumbnail"
       class="w-full h-64 object-cover"
     />
     <img
